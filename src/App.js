@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.svg";
+import "./App.scss";
+import { AboutMe } from "./AboutMe";
 
 function App() {
+  const [active, setActive] = useState(false);
+  const handleClick = () => {
+    console.log("here");
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        Sean Heidrick
+        <button onClick={() => setActive(!active)}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
       </header>
-    </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/">About Me</a>
+        <a href="/">Projects</a>
+        <a href="/">My Resume</a>
+        <a href="/">My Videos</a>
+        <a href="/">My Pictures</a>
+      </nav>
+      <AboutMe />
+    </>
   );
 }
 
