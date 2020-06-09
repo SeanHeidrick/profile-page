@@ -1,9 +1,11 @@
+$base-color: black;
+
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: black;
+  background-color: $base-color;
   header {
     display: flex;
     align-items: center;
@@ -13,9 +15,11 @@ body {
     font-size: 40px;
     font-weight: 1000;
     button {
-      background-color: black;
+      background-color: $base-color;
       border: none;
-      color: black;
+      color: $base-color;
+      outline-color: white;
+
       div {
         width: 30px;
         height: 3px;
@@ -26,10 +30,6 @@ body {
     }
   }
   nav {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid white;
-    border-radius: 10px;
     a {
       text-decoration: none;
       color: white;
