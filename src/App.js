@@ -12,14 +12,18 @@ import { MyPictures } from "./pages/MyPictures";
 function App() {
   return (
     <>
-      <Header />
-
-      <Home />
-      <AboutMe />
-      <Projects />
-      <MyResume />
-      <MyVideos />
-      <MyPictures />
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/home" component={Home} />
+          <Route path="/aboutMe" component={AboutMe} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/myResume" component={MyResume} />
+          <Route path="/myVideos" component={MyVideos} />
+          <Route path="/myPictures" component={MyPictures} />
+          />
+        </Switch>
+      </Router>
     </>
   );
 }

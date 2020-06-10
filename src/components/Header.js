@@ -24,7 +24,12 @@ export const Header = () => {
           <div></div>
         </button>
       </header>
-      <Nav navStyles={navStyles} />
+      <Nav
+        navStyles={navStyles}
+        active={active}
+        setActive={setActive}
+        onClick={handleClick}
+      />
     </>
   );
 };
