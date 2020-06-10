@@ -3,5 +3,5 @@ export const MyPictures = () => {
   let styles = {
     color: "white",
   };
-  return <div style={styles}>MyPictures</div>;
+  return <div style={styles}>My Pictures</div>;
 };

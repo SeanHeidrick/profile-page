@@ -12,7 +12,6 @@ export const Header = () => {
     setActive(!active);
   };
   navStyles.display = active ? "flex" : "none";
-  navStyles.outlineColor = active ? "red" : "black";
 
   return (
     <>
@@ -28,7 +27,7 @@ export const Header = () => {
         navStyles={navStyles}
         active={active}
         setActive={setActive}
-        onClick={handleClick}
+        handleClick={handleClick}
       />
     </>
   );

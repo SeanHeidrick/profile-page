@@ -30,11 +30,13 @@ body {
     }
   }
   nav {
-    p {
+    a {
       text-decoration: none;
-      color: white;
-      text-align: center;
-      border-bottom: 1px solid white;
+      p {
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid white;
+      }
     }
   }
 }
