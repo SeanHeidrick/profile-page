@@ -1,5 +1,5 @@
 $base-color: black;
-
+$accent-color: white;
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    color: black;
+    color: $base-color;
     text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;
     font-size: 40px;
     font-weight: 1000;
@@ -18,13 +18,13 @@ body {
       background-color: $base-color;
       border: none;
       color: $base-color;
-      outline-color: white;
+      outline-color: $accent-color;
 
       div {
         width: 30px;
         height: 3px;
         margin: 8px;
-        background-color: white;
+        background-color: $accent-color;
         border-radius: 5px;
       }
     }
@@ -33,15 +33,15 @@ body {
     a {
       text-decoration: none;
       p {
-        color: white;
+        color: $accent-color;
         text-align: center;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid $accent-color;
       }
     }
   }
 }
 .page-info {
-  color: white;
+  color: $accent-color;
   text-align: center;
   h3 {
     text-decoration: underline;
