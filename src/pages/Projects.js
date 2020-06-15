@@ -1,4 +1,4 @@
 import React from "react";
 export const Projects = () => {
-  return <div>Projects</div>;
+  return <div className="page-info">Projects</div>;
 };
