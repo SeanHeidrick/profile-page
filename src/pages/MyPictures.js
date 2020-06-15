@@ -1,4 +1,4 @@
 import React from "react";
 export const MyPictures = () => {
-  return <div>My Pictures</div>;
+  return <div className="page-info">My Pictures</div>;
 };
