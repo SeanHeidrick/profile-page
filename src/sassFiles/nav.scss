@@ -1,0 +1,24 @@
+$accent: #f4f7f6;
+$primary: #253745;
+#root {
+  background-color: $primary;
+}
+nav {
+  margin: 0 300px;
+  background-color: $primary;
+
+  flex-direction: column;
+  border: 1px solid $accent;
+  border-radius: 10px;
+  a {
+    text-decoration: none;
+    p {
+      color: $accent;
+      text-align: center;
+      border-bottom: 1px solid $accent;
+    }
+    p:nth-child(6) {
+      border-bottom: none;
+    }
+  }
+}

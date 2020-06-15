@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../sassFiles/nav.scss";
 
 export const Nav = (props) => {
   let navJSON = require("../objects/nav.json");

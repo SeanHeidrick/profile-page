@@ -1,47 +1,15 @@
-$base-color: black;
-$accent-color: white;
+$accent: #f4f7f6;
+$primary-page: white;
+$primary: #253745;
+
 * {
   margin: 0;
   padding: 0;
 }
-body {
-  background-color: $base-color;
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: $base-color;
-    text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;
-    font-size: 40px;
-    font-weight: 1000;
-    button {
-      background-color: $base-color;
-      border: none;
-      color: $base-color;
-      outline-color: $accent-color;
 
-      div {
-        width: 30px;
-        height: 3px;
-        margin: 8px;
-        background-color: $accent-color;
-        border-radius: 5px;
-      }
-    }
-  }
-  nav {
-    a {
-      text-decoration: none;
-      p {
-        color: $accent-color;
-        text-align: center;
-        border-bottom: 1px solid $accent-color;
-      }
-    }
-  }
-}
 .page-info {
-  color: $accent-color;
+  background-color: $primary-page;
+  color: $primary;
   text-align: center;
   h3 {
     text-decoration: underline;
