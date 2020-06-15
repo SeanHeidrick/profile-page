@@ -8,16 +8,18 @@ $accent: #f4f7f6;
   padding: 0;
   text-decoration: none;
 }
-body {
+.app {
+  color: $primary;
   text-align: center;
   padding: 50px 0;
+  background-color: $accent;
 }
-header {
+.resume {
   p {
     color: $primary;
   }
 }
-main {
+.resumeInfo {
   padding: 25px;
   display: grid;
   grid-gap: 1%;
@@ -128,8 +130,8 @@ a:focus {
 }
 
 @media screen and (min-width: 1300px) {
-  body {
-    padding: 50px 300px 0 300px;
+  .app {
+    padding: 0px 300px 0 300px;
     background-color: $primary;
     .resume {
       background-color: $accent;
@@ -152,12 +154,12 @@ a:focus {
       }
     }
   }
-  main {
+  .resumeInfo {
     background-color: white;
     display: grid;
     grid-gap: 1% 4%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 185px 30px 425px 200px;
+    grid-template-rows: 185px 30px 500px 200px;
 
     .objective {
       padding-top: 0;
@@ -215,19 +217,29 @@ a:focus {
     }
   }
 }
-
+@page {
+  size: auto;
+  margin: 0mm;
+}
 @media print {
   body {
     padding: 0;
     margin: 0;
-    header {
+  }
+  .header {
+    display: none;
+  }
+
+  .app {
+    padding-bottom: 0;
+    .resume {
       background-color: $accent;
       height: 120px;
       display: grid;
       align-items: center;
       grid-gap: 4%;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      padding: 25px;
+      padding-bottom: 25px;
       .name {
         grid-column: 1/4;
         text-align: right;
@@ -241,13 +253,13 @@ a:focus {
       }
     }
   }
-  main {
-    padding-top: 20px;
+  .resumeInfo {
+    padding-top: 25px;
     background-color: white;
     display: grid;
     grid-gap: 1% 4%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 170px 40px 420px 200px;
+    grid-template-rows: 180px 40px 420px 110px;
     .section-title {
       background-color: white;
       padding: 0;

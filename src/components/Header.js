@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import { Nav } from "./Nav";
+import "../sassFiles/header.scss";
 export const Header = () => {
-  let navStyles = {
-    border: "none",
-    flexDirection: "column",
-    border: "1px solid white",
-    borderRadius: "10px",
-  };
+  let navStyles = {};
   const [active, setActive] = useState(false);
   const handleClick = () => {
     setActive(!active);
@@ -15,7 +11,7 @@ export const Header = () => {
 
   return (
     <>
-      <header>
+      <header className="headerMenu">
         Sean Heidrick
         <button onClick={handleClick}>
           <div></div>
