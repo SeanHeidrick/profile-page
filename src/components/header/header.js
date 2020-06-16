@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Nav } from "../nav/Nav";
+import { Nav } from "../nav/nav";
 import "./header.scss";
 export const Header = () => {
   let navStyles = {};
