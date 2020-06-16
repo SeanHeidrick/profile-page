@@ -34,7 +34,7 @@ const Content = () => {
               for learning looking to transition into a career in web
               development. Has two years of experience with JavaScript and is
               searching for a team to contribute to while growing technical
-              skills in React and other languages.
+              skills in other languages and frameworks.
             </p>
           </section>
 
@@ -65,9 +65,9 @@ const Content = () => {
             <div>
               <h4 className="project-title">Website</h4>
               <p>
-                Developed a consumer-facing website using React and
-                React-Router. This affiliate website assists musicians so they
-                may find and purchase their dream guitar pedal; built using
+                Developing a consumer-facing website using React and
+                React-Router. This affiliate website will assist musicians so
+                they may find and purchase their dream guitar pedal; built using
                 performant and reliable vanilla JS design patterns within a
                 React environment.
               </p>

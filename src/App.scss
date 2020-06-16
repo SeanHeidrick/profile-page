@@ -8,9 +8,11 @@ $primary: #253745;
 }
 
 .page-info {
+  padding: 200px;
   background-color: $primary-page;
   color: $primary;
   text-align: center;
+
   h3 {
     text-decoration: underline;
   }

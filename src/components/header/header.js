@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Nav } from "./Nav";
-import "../sassFiles/header.scss";
+import { Nav } from "../nav/Nav";
+import "./header.scss";
 export const Header = () => {
   let navStyles = {};
   const [active, setActive] = useState(false);
@@ -19,12 +19,7 @@ export const Header = () => {
           <div></div>
         </button>
       </header>
-      <Nav
-        navStyles={navStyles}
-        active={active}
-        setActive={setActive}
-        handleClick={handleClick}
-      />
+      <Nav navStyles={navStyles} handleClick={handleClick} />
     </>
   );
 };
