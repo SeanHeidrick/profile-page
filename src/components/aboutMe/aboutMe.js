@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.scss";
+import "../../App.scss";
 export const AboutMe = () => {
   return (
     <div className="page-info">
@@ -7,7 +7,8 @@ export const AboutMe = () => {
       <p>
         My name is Sean Heidrick and I am a Front End Developer. I'm a
         self-taught coder that has 2 years experience with HTML, CSS, and
-        JavaScript.
+        JavaScript. I'm currently learning the react framework and absolutely
+        loving it.
       </p>
     </div>
   );

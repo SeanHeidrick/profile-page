@@ -16,9 +16,12 @@ nav {
       color: $accent;
       text-align: center;
       border-bottom: 1px solid $accent;
+      border-radius: 10px;
     }
-    p:nth-child(6) {
-      border-bottom: none;
-    }
+  }
+}
+@media print {
+  nav .navMenu {
+    display: none;
   }
 }
