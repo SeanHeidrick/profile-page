@@ -1,0 +1,24 @@
+$accent: #f4f7f6;
+$primary-page: white;
+$primary: #253745;
+
+.project-title {
+  background-color: white;
+  text-align: center;
+  color: $primary;
+}
+.projects {
+  background-color: white;
+  display: grid;
+  main {
+    border-radius: 15px;
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 4%;
+    margin: 0 4%;
+  }
+}
