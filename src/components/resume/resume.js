@@ -5,8 +5,8 @@ export const Resume = () => <Content />;
 const Content = () => {
   return (
     <>
-      <main className="app">
-        <header className="resume">
+      <main className="resume-app">
+        <header className="resume-header">
           <div className="name">
             <h1>
               <span className="first"> Sean </span>Heidrick
@@ -40,7 +40,7 @@ const Content = () => {
 
           <section className="skills">
             <h2 className="section-title">Skills</h2>
-            <ul className="skills">
+            <ul className="skills-list">
               <li>
                 <h4>HTML5 - Web Development</h4>
                 <hr className="html" />

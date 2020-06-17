@@ -8,13 +8,13 @@ $accent: #f4f7f6;
   padding: 0;
   text-decoration: none;
 }
-.app {
+.resume-app {
   color: $primary;
   text-align: center;
   padding: 50px 0;
-  background-color: $accent;
+  background-color: white;
 }
-.resume {
+.resume-header {
   p {
     color: $primary;
   }
@@ -25,7 +25,7 @@ $accent: #f4f7f6;
   grid-gap: 1%;
   justify-content: center;
 }
-ul {
+.skills-list {
   list-style-type: none;
 }
 
@@ -130,10 +130,10 @@ a:focus {
 }
 
 @media screen and (min-width: 1300px) {
-  .app {
+  .resume-app {
     padding: 0px 300px 0 300px;
     background-color: $primary;
-    .resume {
+    .resume-header {
       background-color: $accent;
       height: 120px;
       display: grid;
