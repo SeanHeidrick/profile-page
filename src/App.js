@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
 import { AboutMe } from "./components/aboutMe/aboutMe";
@@ -26,4 +27,5 @@ function App() {
     </>
   );
 }
+
 export default App;
