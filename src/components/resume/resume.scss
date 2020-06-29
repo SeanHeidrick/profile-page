@@ -128,10 +128,10 @@ a:focus {
     margin-bottom: 5px;
   }
 }
-
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 800px) {
   .resume-app {
-    padding: 0px 300px 0 300px;
+    width: 90%;
+    padding: 0 5%;
     background-color: $primary;
     .resume-header {
       background-color: $accent;
@@ -194,6 +194,9 @@ a:focus {
         width: 55%;
         margin-left: 45%;
       }
+      .project-title {
+        text-align: right;
+      }
       text-align: right;
       grid-column: 1/4;
       grid-row: 2/4;
@@ -217,6 +220,36 @@ a:focus {
     }
   }
 }
+@media screen and (min-width: 900px) {
+  .resume-app {
+    width: 80%;
+    padding: 0 10%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .resume-app {
+    width: 71.5%;
+    padding: 0 14.25%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .resume-app {
+    width: 65%;
+    padding: 0 17.5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .resume-app {
+    width: 60%;
+    padding: 0 20%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .resume-app {
+    width: 55%;
+    padding: 0px 22.5% 0 22.5%;
+  }
+}
 @page {
   size: auto;
   margin: 0mm;
@@ -233,16 +266,21 @@ a:focus {
     display: none;
   }
 
-  .app {
+  .resume-app {
+    margin-top: none;
+    padding-top: 0;
     padding-bottom: 0;
-    .resume {
+
+    .resume-header {
       background-color: $accent;
       height: 120px;
       display: grid;
       align-items: center;
       grid-gap: 4%;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      padding-top: 25px;
       padding-bottom: 25px;
+
       .name {
         grid-column: 1/4;
         text-align: right;
@@ -301,6 +339,9 @@ a:focus {
         text-align: right;
         width: 100%;
         margin-left: 0;
+      }
+      .project-title {
+        text-align: right;
       }
       text-align: right;
       grid-column: 1/4;

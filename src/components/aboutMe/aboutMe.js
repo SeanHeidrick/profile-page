@@ -1,10 +1,12 @@
 import React from "react";
-import "../../App.scss";
+import "./aboutMe.scss";
 export const AboutMe = () => {
   return (
-    <div className="page-info">
-      <h3>About Me</h3>
-      <p>
+    <main className="text-page">
+      <h1>
+        <p className="page-title">About Me</p>
+      </h1>
+      <p className="page-info">
         My name is Sean Heidrick and I am a Front End Developer. I'm a
         self-taught coder that has 2 years experience with HTML, CSS, and
         JavaScript. I'm currently learning the React framework and absolutely
@@ -12,6 +14,6 @@ export const AboutMe = () => {
         <br></br>Outside of coding I'm a guitar player, a gamer, a do it your
         selfer, and a ...
       </p>
-    </div>
+    </main>
   );
 };
