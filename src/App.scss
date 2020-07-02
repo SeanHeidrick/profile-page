@@ -33,16 +33,42 @@ html {
     color: $primary;
     text-align: center;
   }
+  .image-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4%;
+    margin: 0 10%;
+    padding: 5% 5%;
+    background-color: white;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    main {
+      border-radius: 10px;
+    }
+  }
 }
 
-@media screen and(min-width:500px) {
+@media screen and(min-width:550px) {
   .text-page {
     h1 {
       padding: 25px 20%;
     }
+    .image-page {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
-@media screen and(min-width:1100px) {
+@media screen and(min-width: 900px) {
+  .text-page {
+    .image-page {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+@media screen and(min-width:1200px) {
   .text-page {
     h1 {
       margin: 0 10%;
@@ -52,15 +78,6 @@ html {
     .image-page {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 4%;
-      margin: 0 10%;
-      padding: 5% 5%;
-      background-color: white;
-
-      img {
-        width: 100%;
-        height: auto;
-      }
     }
   }
 }

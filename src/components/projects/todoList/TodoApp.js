@@ -14,6 +14,7 @@ export const TodoApp = () => {
     itemsCopy.push(newItem);
     setItems(itemsCopy);
     console.log(items);
+    setInput("");
   };
 
   const deleteItem = (i) => {

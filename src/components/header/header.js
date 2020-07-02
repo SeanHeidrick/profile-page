@@ -8,7 +8,6 @@ export const Header = () => {
     setActive(!active);
   };
   navStyles.display = active ? "flex" : "none";
-
   return (
     <>
       <header className="headerMenu">

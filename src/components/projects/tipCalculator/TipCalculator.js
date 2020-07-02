@@ -5,10 +5,19 @@ export const TipCalculator = () => {
   const [tipPercent, setTipPercent] = useState(0);
   const [people, setPeople] = useState("");
   const [tipAmount, setTipAmount] = useState("");
-
+  console.log(typeof people);
   const handleClick = (e) => {
     e.preventDefault();
-    setTipAmount((billAmount * tipPercent) / people);
+    if (billAmount === "") {
+      setTipAmount("Must Enter All Fields");
+    } else if (tipPercent === 0) {
+      setTipAmount("Must Enter All Fields");
+    } else {
+      setTipAmount((billAmount * tipPercent) / people);
+      setBillAmount("");
+      setTipPercent(0);
+      setPeople("");
+    }
   };
 
   const percentChangeHandler = (e) => setTipPercent(e.target.value);
@@ -18,12 +27,11 @@ export const TipCalculator = () => {
   return (
     <main className="tip-calc-app">
       <h2 className="title">TIP CALCULATOR</h2>
-      <form action="" className="tip-calc-form">
+      <form action="" className="tip-calc-form" onSubmit={handleClick}>
         <label htmlFor="Bill Amount">
           How much was your bill?
           <br />
           <input
-            // placeholder="Bill Amount"
             value={billAmount}
             className="bill"
             placeholder="Bill Amount"
@@ -60,9 +68,7 @@ export const TipCalculator = () => {
           />
         </label>
 
-        <button className="calculate" onClick={handleClick}>
-          Calculate
-        </button>
+        <button className="calculate">Calculate</button>
         <sup></sup>
         <span className="tip"></span>
         <small className="each">${tipAmount}</small>
