@@ -5,19 +5,26 @@ $primary: #253745;
 }
 nav {
   margin: 0 10%;
-
   background-color: $primary;
-
   flex-direction: column;
   border: 1px solid $accent;
   border-radius: 10px;
   a {
     text-decoration: none;
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $accent;
+    }
+    &:hover {
+      background-color: $accent;
+      opacity: 0.56;
+      p {
+        color: $primary;
+      }
+    }
     p {
       color: $accent;
       text-align: center;
-      border-bottom: 1px solid $accent;
-      border-radius: 10px;
+      margin: 10px 0;
     }
   }
 }
