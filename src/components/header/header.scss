@@ -13,6 +13,7 @@ $accent: #f4f7f6;
     -1px 1px 0 $accent-color, 1px 1px 0 $accent-color;
   font-size: 40px;
   font-weight: 1000;
+  margin-bottom: 0.7em;
   button {
     background-color: $primary;
     border: none;
@@ -28,16 +29,7 @@ $accent: #f4f7f6;
     }
   }
 }
-nav {
-  a {
-    text-decoration: none;
-    p {
-      color: $accent-color;
-      text-align: center;
-      border-bottom: 1px solid $accent-color;
-    }
-  }
-}
+
 @media print {
   .headerMenu {
     display: none;
