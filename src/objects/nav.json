@@ -1,9 +1,9 @@
 [
   { "title": "Home", "link": "/" },
-  { "title": "About Me", "link": "/aboutMe" },
+  { "title": "About", "link": "/aboutMe" },
   { "title": "Projects", "link": "/Projects" },
-  { "title": "My Resume", "link": "/myResume" },
-  { "title": "My Videos", "link": "/myVideos" },
-  { "title": "My Pictures", "link": "/myPictures" },
+  { "title": "Resume", "link": "/myResume" },
+  { "title": "Videos", "link": "/myVideos" },
+  { "title": "Pictures", "link": "/myPictures" },
   { "title": "Contact", "link": "/contact" }
 ]
