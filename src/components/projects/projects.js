@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { TodoApp } from "./todoList/TodoApp";
 import { TipCalculator } from "./tipCalculator/TipCalculator";
-// import "./projects.scss";
 
 export const Projects = () => {
   return (
